@@ -2,6 +2,8 @@ from database import Database
 import re
 from table import Table
 
+#Η εργασία έχει πραγματοποιηθεί ισάξια απο όλα τα μέλη της ομάδας
+
 db = Database('SQL', load=False)
 
 db.create_table('classroom', ['building', 'room_number', 'capacity'], [str, str, int], primary_key='room_number')
